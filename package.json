@@ -1,0 +1,11 @@
+{
+  "name": "projeto_nlw",
+  "version": "1.0.0",
+  "description": "Projeto da trilha de Node.js no NLW 5",
+  "main": "index.js",
+  "author": "Thiago Moreira Ribeiro",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
