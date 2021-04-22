@@ -1,17 +1,12 @@
 import express from "express";
 
+import { routes } from "./routes";
+
+import "./database";
+
 const app = express();
 
-app.get("/", (request, response) => {
-  return response.json({
-    message: "Olá Mundo",
-  });
-});
+app.use(express.json());
+app.use(routes);
 
-app.post("/", (request, response) => {
-  return response.json({
-    message: "Usuário salvo",
-  });
-});
-
-app.listen(3333, () => console.log("Servidor iniciado"));
+app.listen(3333, () => console.log("Server started on 3333"));
